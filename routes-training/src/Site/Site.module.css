@@ -1,0 +1,24 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 1000px;
+    row-gap: 3px;
+}
+
+.header {
+    background-color: cadetblue;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 3px;
+
+}
+
+.nav {
+    background-color: burlywood;
+}
+
+.content {
+    background-color: cornflowerblue;
+}
