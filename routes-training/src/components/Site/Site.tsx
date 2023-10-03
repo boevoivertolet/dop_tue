@@ -1,9 +1,11 @@
 import s from './Site.module.css'
-import { NavLink, Route, Routes,Navigate } from 'react-router-dom'
+import { Navigate, NavLink, Route, Routes } from 'react-router-dom'
 import { PageOne } from './pages/PageOne'
 import { PageThree } from './pages/PageThree'
 import { PageTwo } from './pages/PageTwo'
 import { ErrorPage } from './pages/ErrorPage'
+import { S } from '../_styles'
+
 
 export function Site() {
     return (
@@ -13,11 +15,9 @@ export function Site() {
             </div>
             <div className={s.body}>
                 <div className={s.nav}>
-                    <div>
-                        <NavLink to={'page1'}> Page1</NavLink>
-                        <NavLink to={'page2'}> Page2</NavLink>
-                        <NavLink to={'page3'}> Page3</NavLink>
-                    </div>
+                    <S.NavWrapper> <NavLink to={'page1'}> Page1</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={'page2'}> Page2</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={'page3'}> Page3</NavLink></S.NavWrapper>
                 </div>
                 <div className={s.content}>
                     <Routes>
@@ -35,3 +35,4 @@ export function Site() {
         </div>
     )
 }
+

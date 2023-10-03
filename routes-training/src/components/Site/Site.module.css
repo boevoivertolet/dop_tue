@@ -22,7 +22,10 @@
 .content {
     background-color: cornflowerblue;
 }
-.nav div {
-    display: flex;
-    flex-direction: column;
+
+
+
+.navLink {
+    text-decoration: none;
+    color: aquamarine;
 }
