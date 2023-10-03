@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Site } from './Site/Site'
+import { Site } from './components/Site/Site'
 
 function App() {
     return (

@@ -22,3 +22,7 @@
 .content {
     background-color: cornflowerblue;
 }
+.nav div {
+    display: flex;
+    flex-direction: column;
+}
