@@ -16,13 +16,13 @@ export function Site() {
             </div>
             <div className={s.body}>
                 <div className={s.nav}>
-                    <S.NavWrapper> <NavLink to={'page/0'}> Page1</NavLink></S.NavWrapper>
-                    <S.NavWrapper><NavLink to={'page/1'}> Page2</NavLink></S.NavWrapper>
-                    <S.NavWrapper><NavLink to={'page/2'}> Page3</NavLink></S.NavWrapper>
+                    <S.NavWrapper> <NavLink to={'page/0'}> Page 1</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={'page/1'}> Page 2</NavLink></S.NavWrapper>
+                    <S.NavWrapper><NavLink to={'page/2'}> Page 3</NavLink></S.NavWrapper>
                 </div>
                 <div className={s.content}>
                     <Routes>
-                        <Route path={'/'} element={<Navigate to={'page1'} />} />
+                        <Route path={'/'} element={<Navigate to={'page/0'} />} />
 
                         <Route path={'/page/:id'} element={<Page pages={data.pages} />} />
                         <Route path={'/*'} element={<ErrorPage />} />
